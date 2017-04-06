@@ -15,9 +15,16 @@ var person = {
     // В ES6 можно немного упростить вызов метода
     sayHello: function sayHello() {
         console.log('Hi my name is ' + this.firsName + ' ' + this.lastName);
+    },
+
+    get fullName() {
+        return this.firsName + ' ' + this.lastName;
+    },
+    set fullName(value) {
+        return this.firsName = value;
     }
 };
-
+person.fullName = 'Steve';
 console.log(person);
 person.sayHello();
 /*
@@ -49,7 +56,7 @@ person[property]; // person['email']
 // value - значение
 function createCar(property, value) {
     var car = {}; // создаем объект
-    car[property] = value; // присваиваем значение
+    car[property] = value; // присваиваем значение свойству объекта car
     return car; // возвращаем объект
 }
 
