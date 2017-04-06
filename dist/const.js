@@ -1,9 +1,9 @@
 "use strict";
 
-npm; /*
-     const PI = 3.14159;
-     console.log(PI);
-     */
+/*
+const PI = 3.14159;
+console.log(PI);
+*/
 
 // объект MATH
 var MATH = {
